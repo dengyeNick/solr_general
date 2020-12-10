@@ -624,7 +624,9 @@ class ClassicTokenizerImpl {
     	  map[j++] = value; 
     	  if (j == 216) map[j-1] = 15; //跳过‘×’号的分词
     	  
-    	  if (j == 44) map[j-1] = 15; //跳过‘×’号的分词
+    	  if (j == 44) map[j-1] = 15; //跳过‘+’号的分词
+    	  
+    	  if (j == 46) map[j-1] = 15; //跳过‘-’号的分词
       } while (--count > 0);
     }
     return map;
