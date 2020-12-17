@@ -1,4 +1,7 @@
 spring:
+  data:
+    solr:
+      host: http://192.168.1.114:8983/solr
   application:
     name: springboot_solr
     
